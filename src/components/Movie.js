@@ -10,7 +10,7 @@ export default function Movie({id, image, slug, title, year}) {
             <h5>{title}</h5>
             <h6>{year}</h6>
            
-            <Link to={`/movie/${slug}`} className="btn btn-primary btn-details">details</Link>
+            <Link to={`/movie/${id}/${slug}`} className="btn btn-primary btn-details">details</Link>
             
         </div>
     </article>
