@@ -12,6 +12,7 @@ Variables
 :root {
   --primaryLightColor: #d4e6a5;
   --primaryColor: #476a2e;
+  --secondaryColor: #3a4fb0;
   --primaryDarkColor: #c02c03;
   --primaryFont: "Open Sans", sans-serif;
   --slantedFont: "Solway", serif;

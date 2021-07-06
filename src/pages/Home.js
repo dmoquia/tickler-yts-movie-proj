@@ -15,7 +15,7 @@ export default function Home() {
                 const response = await fetch(`https://yts.mx/api/v2/list_movies.jsonp?query_term=${searchTerm}`);
                 const data = await response.json()
                 const {data:{movies}} = data;
-                console.log(data)
+                // console.log(data)
                 if(movies){
                     const newMovies = movies.map(item => {
                         const {id, medium_cover_image, slug, title, year} = item
