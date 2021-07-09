@@ -19,6 +19,7 @@ export default function SingleMovie() {
                 const data = await response.json()
 
                 const { data: { movie } } = data
+
                 if (movie) {
                     const { title_long: title, large_cover_image: image, year, genres, description_intro: des, torrents } = movie
 
