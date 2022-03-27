@@ -19,7 +19,7 @@ export default function Home() {
         const {
           data: { movies },
         } = data;
-        // console.log(data)
+
         if (movies) {
           const newMovies = movies.map((item) => {
             const { id, medium_cover_image, slug, title, year } = item;
