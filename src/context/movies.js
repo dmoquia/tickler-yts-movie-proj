@@ -5,18 +5,10 @@ export const MovieContext = React.createContext();
 const MovieProvider = ({ children }) => {
   const [loading, setLoading] = React.useState(false);
   const [movies, setMovies] = React.useState([]);
-  const [featured, setFeatured] = React.useState([]);
 
   const [sorted, setSorted] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [searchTerm, setSearchTerm] = React.useState("");
-  const [filters, setFilters] = React.useState({
-    quality: "all",
-    genre: "all",
-    rating: "all",
-    year: "all",
-    language: "all",
-  });
 
   React.useEffect(() => {
     setLoading(true);
@@ -85,10 +77,8 @@ const MovieProvider = ({ children }) => {
       value={{
         loading,
         movies,
-        featured,
         sorted,
         page,
-        filters,
         changePage,
         getSearch,
       }}
