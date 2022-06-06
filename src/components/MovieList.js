@@ -11,7 +11,11 @@ export default function MovieList({ movies, loading, movieLength }) {
 
   return (
     <section className="section">
-      <h2 className="section-title">{movieLength.length} results</h2>;
+      <h2 className="section-title">
+        {/* {movieLength.length >= 50 ? "Movies" : movieLength.length + " Result"} */}
+        Movies
+      </h2>
+      ;
       <div className="movies-center">
         {movies.map((item) => {
           return <Movie key={item.id} {...item} />;
