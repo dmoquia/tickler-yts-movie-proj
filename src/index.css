@@ -472,8 +472,3 @@ movie
   border: none;
   border-top: 0.5px solid var(--mainBlack);
 }
-.search-errors {
-  margin-top: 8rem;
-  font-size: 1.1rem;
-  padding: 0 2rem;
-}

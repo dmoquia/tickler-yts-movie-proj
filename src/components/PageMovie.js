@@ -89,8 +89,7 @@ function PageMovie() {
   } else {
     return (
       <h3 className="search-errors">
-        {" "}
-        unfortunately your search query did not return any products
+        unfortunately your search query did not return any result
       </h3>
     );
   }

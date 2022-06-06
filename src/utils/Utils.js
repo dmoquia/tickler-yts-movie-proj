@@ -25,7 +25,8 @@ function Utils(props) {
       {res.map((item, index) => (
         <div key={index}>
           <h3>{item.quality}</h3>
-          <div style={{ marginLeft: "0.2rem" }}>
+          <h3>{item.type}</h3>
+          <div style={{ marginLeft: "0.5rem" }}>
             <a href={`${a}${item.hash}`} className="btn btn-primary">
               download
             </a>
